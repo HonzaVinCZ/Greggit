@@ -1,0 +1,167 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "mainmenu:textures/logo.png",
+            "posX" : 15,
+            "posY" : -75,
+            "width" : 256,
+            "height" : 256,
+            "alignment" : "top_left"
+        }
+    },
+    "buttons":
+    {
+		"singleplayer":
+        {
+            "text" : "Singleplayer",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 80,
+            "posY" : -20,
+            "width" : 96,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },		
+		"multiplayer":
+        {
+            "text" : "Multiplayer",			
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 80,
+            "posY" : 0,
+            "width" : 96,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "play.mctitan.cz"
+            }
+        },
+		"options":
+        {
+            "text" : "Options",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 80,
+            "posY" : 30,
+            "width" : 96,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        "quit":
+        {
+            "text" : "Quit",
+			"normalTextColor" : 16729156,
+			"hoverTextColor" : 16729156,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 80,
+            "posY" : 50,
+            "width" : 96,
+            "height" : 20,
+			"alignment" : "left_center",
+			"hoverText" : "Ale notak",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        "mods":
+        {
+            "text" : "Mods (#modsloaded#/#modsactive#)",
+			"normalTextColor" : 6710886,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 80,
+            "posY" : 80,
+            "width" : 96,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "packName":
+        {
+            "text" : "§7MC Titan Greggit v§e§l1.1",
+            "normalTextColor" : 12303291,
+            "hoverTextColor" : 3125670,
+            "posX" : -107,
+            "posY" : -15,
+            "alignment" : "bottom_right"
+        },
+        "web":
+        {
+            "text" : "Web",
+            "color" : 12303291,
+            "hoverColor" : 3125670,
+            "posX" : -25,
+            "posY" : -30,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "http://www.mctitan.cz/"
+            }
+        },
+        "slash":
+        {
+            "text" : " §e§l/ ",
+            "posX" : -37,
+            "posY" : -30,
+            "alignment" : "bottom_right"
+        },
+        "discord":
+        {
+            "text" : "Discord",
+            "color" : 12303291,
+            "hoverColor" : 3125670,
+            "posX" : -75,
+            "posY" : -30,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/xn9RPYC"
+            }
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 230,
+            "posY" : 70,
+            "color" : -256,
+            "alignment" : "top_left",
+            "texts" : "file:minecraft:texts/splashes.txt"
+        },
+		"background":
+		{
+			"image" : "mainmenu:textures/bg.png",
+			"mode" : "stretch"
+		}
+    }
+}
