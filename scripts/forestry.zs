@@ -18,6 +18,18 @@ recipes.remove(<forestry:kit_pickaxe>);
 # Fertilizer
 recipes.remove(<forestry:fertilizer_compound>);
 mixer.recipeBuilder()
+    .inputs(<ore:dustCalcite> * 6, <minecraft:dye:15> * 6)
+    .outputs(<forestry:fertilizer_compound> * 8)
+    .duration(200)
+    .EUt(16)
+    .buildAndRegister();
+mixer.recipeBuilder()
+    .inputs(<ore:dustCalcite> * 6, <ore:dustAsh> * 6)
+    .outputs(<forestry:fertilizer_compound> * 8)
+    .duration(200)
+    .EUt(16)
+    .buildAndRegister();
+mixer.recipeBuilder()
     .inputs(<gregtech:meta_item_1:2226> * 2, <minecraft:dye:15> * 6)
     .outputs(<forestry:fertilizer_compound> * 8)
     .duration(200)

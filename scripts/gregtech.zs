@@ -13,6 +13,15 @@ val electrolyzer = mods.gregtech.recipe.RecipeMap.getByName("electrolyzer");
 val chemical_reactor = mods.gregtech.recipe.RecipeMap.getByName("chemical_reactor");
 val centrifuge = mods.gregtech.recipe.RecipeMap.getByName("centrifuge");
 
+
+# Stone Dust
+compressor.recipeBuilder()
+    .inputs(<ore:dustStone> * 16)
+    .outputs(<gregtech:meta_item_1:2097> * 3)
+    .duration(300)
+    .EUt(4)
+    .buildAndRegister();
+
 # Plant Ball
 compressor.recipeBuilder()
     .inputs(<ore:treeLeaves> * 32)
